@@ -34,3 +34,20 @@ function playRound(playerSelection, computerSelection) {
       }
   }
 }
+
+function game() {
+	let playerScore = 0;
+  let computerScore = 0;
+  
+  for (let i = 1; i <= 5; i++) {
+  	let playerChoice = prompt("Rock, Paper or Scissors");
+    let result = playRound(playerChoice, getComputerChoice());
+  
+    if (result === "Player Won") {
+      playerScore++;    
+    } else if (result === "Computer Won") {
+      computerScore++;
+    }
+  }
+  console.log(playerScore > computerScore ? "The Winner is Player" : "The Winner is Computer");
+}
