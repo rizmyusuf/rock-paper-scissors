@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #24272e;
+  font-family: sans-serif;
+}
+
+/* header */
+header {
+  background: #fff;
+  padding: 20px;
+}
+
+header > h1 {
+  color: #333;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* score board */
+.score-board {
+  margin: 20px auto;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.badge {
+  background: #e25840;
+  color: #fff;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* result */
+.result > p {
+  text-align: center;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+/* choices */
+.choices {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.choice {
+  display: inline-block;
+}
+
+.choice > button {
+  font-weight: 800;
+  padding: 10px;
+  margin: 0 20px;
+  width: 98px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.choice > button:hover {
+  cursor: pointer;
+  background: salmon;
+}
+
+/* make your move */
+#action-message {
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 20px;
+}
